@@ -40,4 +40,33 @@ console.log(sum(4,5))
 
 let total: number = sum(5,6)
 
-console.log(total)
+//console.log(total)
+
+function debug(message: string) : void {
+    console.log(message)
+}
+
+debug("hello world")
+
+let jasmine: any = {
+    firstName: "Jasmine",
+    age: 23,
+    children: ["lily", "david"],
+    hasCertificate: false,
+}
+
+let keshia: any = {
+    firstName: "Jas",
+    age: 22,
+    children: ["lily", "david"],
+
+}
+
+interface person {
+    firstName: string,
+    age: number, 
+    children: string[],
+    hasCertificate?: boolean,
+}
+
+console.log(jasmine, keshia)
